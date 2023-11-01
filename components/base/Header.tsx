@@ -12,12 +12,12 @@ const Header: React.FC = () => {
           {navLinks.map((link) => (
             <Link
               href={link.link}
-              className="text-sm font-medium cursor-pointer text-white"
+              className="text-xs lg:text-sm font-medium cursor-pointer text-white"
             >
               {link.name}
             </Link>
           ))}
-          <button className="bg-brand py-1 px-3 font-medium text-sm rounded-sm  text-white">
+          <button className="bg-brand py-1 px-3 font-medium text-sm rounded-sm lg:block hidden text-white">
             Make Appointment
           </button>
         </div>

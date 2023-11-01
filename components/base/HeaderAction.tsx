@@ -11,8 +11,8 @@ const HeaderAction: React.FC = () => {
   return (
     <>
       {/* Upper Navbar */}
-      <div className="flex justify-between items-center gap-x-3 p-1 border-b border-y-[#e9e9e9] border-opacity-50">
-        <div className="flex items-center gap-x-2">
+      <div className="flex justify-center lg:justify-between items-center gap-x-3 p-1 border-b border-y-[#e9e9e9] border-opacity-40">
+        <div className=" items-center gap-x-4 lg:flex hidden">
           <Twitter size={15} fill="orange" />
           <Facebook size={15} fill="orange" />
           <Instagram size={15} fill="orange" />

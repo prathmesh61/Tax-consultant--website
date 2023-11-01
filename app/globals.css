@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .heroBg-Img {
-  background-image: url("/public/tax-hero.jpg");
+  background-image: url("/public/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
