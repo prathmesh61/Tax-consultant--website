@@ -1,6 +1,6 @@
 const Hero: React.FC = () => {
   return (
-    <section className="max-w-[1440px] relative mx-auto ">
+    <section className="max-w-[1440px]  mx-auto ">
       <div className="flex flex-col gap-y-5 absolute right-40 top-60 px-6 py-2">
         <h3 className="text-white font-bold lg:text-3xl text-lg">
           WE'RE TAX CONSULTANT

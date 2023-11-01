@@ -12,6 +12,7 @@ const Header: React.FC = () => {
           {navLinks.map((link) => (
             <Link
               href={link.link}
+              key={link.name}
               className="text-xs lg:text-sm font-medium cursor-pointer text-white"
             >
               {link.name}
