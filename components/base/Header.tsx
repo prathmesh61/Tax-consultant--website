@@ -8,7 +8,7 @@ const Header: React.FC = () => {
       <HeaderAction />
       <div className="flex items-center justify-between gap-x-3 py-2">
         <span className="text-xl font-extrabold  text-white">LOGO</span>
-        <div className="flex items-center gap-x-6">
+        <div className="flex items-center gap-x-10">
           {navLinks.map((link) => (
             <Link
               href={link.link}
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
               {link.name}
             </Link>
           ))}
-          <button className="bg-brand py-1 px-3 font-medium text-sm rounded-sm lg:block hidden text-white">
+          <button className="bg-brand py-1 px-3 font-medium text-xs rounded-sm lg:block hidden ">
             Make Appointment
           </button>
         </div>

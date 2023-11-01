@@ -1,4 +1,4 @@
-import { Check, CheckCheck, ListChecks, MoveRight } from "lucide-react";
+import { Check, CheckCheck, ListChecks, MoveRight, Send } from "lucide-react";
 
 const FormLayout: React.FC = () => {
   const list = [
@@ -13,7 +13,7 @@ const FormLayout: React.FC = () => {
   ];
   return (
     <section className="max-w-[1440px] mx-auto px-6 py-2 relative mt-10">
-      <div className="flex flex-wrap-reverse gap-10 lg:gap-0 relative">
+      <div className="flex flex-wrap-reverse gap-20 lg:gap-0 relative">
         <div className=" w-full lg:w-2/3 flex justify-center flex-col gap-y-5 ">
           <h2 className="text-black  font-extrabold lg:text-5xl text-2xl ">
             We Will Provide Best Tax Service
@@ -36,11 +36,11 @@ const FormLayout: React.FC = () => {
             ))}
           </ul>
         </div>
-        <div className="w-full lg:w-1/3 bg-white shadow-lg p-4 ">
+        <div className="w-full lg:w-1/3 bg-white shadow-xl p-4 ">
           <span className="text-brand uppercase font-medium text-sm">
             SEND A MESSAGE
           </span>
-          <h2 className="text-black  font-extrabold lg:text-3xl text-xl">
+          <h2 className="text-black font-extrabold lg:text-3xl text-xl">
             Request a call back
           </h2>
           <div className="flex flex-col gap-y-5 mt-4">
@@ -69,8 +69,8 @@ const FormLayout: React.FC = () => {
               className="w-full  p-4 border-none bg-gray-200  placeholder:text-gray-600"
               placeholder="Any question you have?"
             />
-            <button className="w-[200px] h-[40px] bg-brand cursor-pointer rounded-md">
-              We will reach you
+            <button className="w-[250px] h-[40px] bg-brand cursor-pointer rounded-md flex items-center justify-center gap-1">
+              We will reach you <Send className="w-5 h-5 " />
             </button>
           </div>
         </div>

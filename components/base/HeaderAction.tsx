@@ -12,12 +12,12 @@ const HeaderAction: React.FC = () => {
   return (
     <>
       {/* Upper Navbar */}
-      <div className="flex justify-center lg:justify-between items-center gap-x-3 p-1 border-b border-y-[#e9e9e9] border-opacity-20">
+      <div className="flex justify-center lg:justify-between items-center gap-x-3 p-2 border-b border-y-[#e9e9e9] border-opacity-20">
         <div className=" items-center gap-x-4 lg:flex hidden">
-          <Twitter size={20} fill="orange" />
-          <Facebook size={20} fill="orange" />
-          <Instagram size={20} fill="orange" />
-          <Youtube size={20} fill="orange" />
+          <Twitter size={17} fill="orange" />
+          <Facebook size={17} fill="orange" />
+          <Instagram size={17} fill="orange" />
+          <Youtube size={17} fill="orange" />
         </div>
         {/* Main Navbar */}
         <div className="flex items-center gap-x-3">
