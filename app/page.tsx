@@ -1,3 +1,4 @@
+import ExperthLayout from "@/components/base/ExperthLayout";
 import FormLayout from "@/components/base/FormLayout";
 import Header from "@/components/base/Header";
 import Hero from "@/components/base/Hero";
@@ -22,6 +23,7 @@ export default function Home() {
       </div>
       <FormLayout />
       <ServiceLayout />
+      <ExperthLayout />
     </main>
   );
 }
