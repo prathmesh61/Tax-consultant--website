@@ -1,16 +1,31 @@
-import { Check, CheckCheck, ListChecks, MoveRight, Send } from "lucide-react";
-
+"use client";
+import { Check, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
+import { FormEventHandler } from "react";
+import React, { useRef } from "react";
+import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "@/lib/constants";
 const FormLayout: React.FC = () => {
+  const form = useRef<any>();
   const list = [
     "Learn from customer feedback",
-    "Professional Team",
-    "High Savings Potential",
+    "experience Knowledge",
     "24/7 customer support",
-    "High Savings Potential",
-    "Professional Team",
-    "24/7 customer support",
-    "Learn from customer feedback",
+    "Customer satisfaction",
   ];
+  console.log(form.current);
+
+  const sendEmail = (e: any) => {
+    e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
   return (
     <section className="max-w-[1440px] mx-auto px-6 py-2 relative mt-10">
       <div className="flex flex-wrap-reverse gap-20 lg:gap-0 relative">
@@ -43,36 +58,43 @@ const FormLayout: React.FC = () => {
           <h2 className="text-black font-extrabold lg:text-3xl text-xl">
             Request a call back
           </h2>
-          <div className="flex flex-col gap-y-5 mt-4">
+          <form
+            ref={form}
+            className="flex flex-col gap-y-5 mt-4"
+            onSubmit={sendEmail}
+          >
             <input
               type="text"
-              name="name"
+              name="user_name"
               className="w-full  p-4 border-none bg-gray-200  placeholder:text-gray-600"
               placeholder="Full Name"
             />
             <input
               type="email"
-              name="email"
+              name="user_email"
               className="w-full  p-4 border-none bg-gray-200  placeholder:text-gray-600"
               placeholder="Your email"
             />
             <input
               type="number"
-              name="number"
+              name="user_number"
               className="w-full  p-4 border-none bg-gray-200  placeholder:text-gray-600"
               placeholder="Your phone number"
             />
             <textarea
               rows={3}
               cols={3}
-              name="text"
+              name="message"
               className="w-full  p-4 border-none bg-gray-200  placeholder:text-gray-600"
               placeholder="Any question you have?"
             />
-            <button className="w-[250px] h-[40px] bg-brand cursor-pointer rounded-md flex items-center justify-center gap-1">
+            <button
+              type="submit"
+              className="w-[250px] h-[40px] bg-brand cursor-pointer rounded-md flex items-center justify-center gap-1"
+            >
               We will reach you <Send className="w-5 h-5 " />
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
