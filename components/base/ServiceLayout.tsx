@@ -2,7 +2,7 @@ import { services } from "@/utils/Services";
 import React from "react";
 const ServiceLayout = () => {
   return (
-    <section className="mt-32 bg-[#184341] p-2">
+    <section id="servicesLayout" className="mt-32 bg-[#184341] p-2">
       <div className="max-w-[1540px] mx-auto px-6 py-2">
         <div className="flex flex-col gap-y-8 items-center justify-center">
           <span className="text-brand font-bold">OUR SERVICES</span>

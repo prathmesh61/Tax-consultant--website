@@ -27,7 +27,10 @@ const FormLayout: React.FC = () => {
     );
   };
   return (
-    <section className="max-w-[1440px] mx-auto px-6 py-2 relative mt-10">
+    <section
+      id="formLayout"
+      className="max-w-[1440px] mx-auto px-6 py-2 relative mt-20"
+    >
       <div className="flex flex-wrap-reverse gap-20 lg:gap-0 relative">
         <div className=" w-full lg:w-2/3 flex justify-center flex-col gap-y-5 ">
           <h2 className="text-black  font-extrabold lg:text-5xl text-2xl ">

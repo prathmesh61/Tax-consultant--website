@@ -19,9 +19,13 @@ const Hero: React.FC = () => {
           Our Experience expertise help you navigate complex tax matters and
           legal services efficiently.
         </p>
-        <button className="w-[150px] h-[30px] lg:w-[250px] lg:h-[40px] bg-brand text-[10px] lg:text-sm cursor-pointer rounded-md flex items-center justify-center gap-2">
+
+        <a
+          href="#formLayout"
+          className="w-[150px] h-[30px] lg:w-[250px] lg:h-[40px] bg-brand text-[10px] lg:text-sm cursor-pointer rounded-md flex items-center justify-center gap-2"
+        >
           Make Appointment <ArrowBigRightDash className="w-5 h-5 " />
-        </button>
+        </a>
       </div>
     </section>
   );
