@@ -36,8 +36,8 @@ const FormLayout: React.FC = () => {
           </h2>
           <hr className="w-24 h-2 bg-brand " />
           <p className="text-black font-medium text-sm lg:text-lg max-w-[458px]">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-            commodo ligula eget dolor. Aenean massa. Cum sociis natoque
+            We will provide best tax consulting & legal advisory services
+            related to property at Best Price.
           </p>
           <ul className="grid grid-cols-2  lg:max-w-[60%] w-full gap-2">
             {list.map((item: string) => (

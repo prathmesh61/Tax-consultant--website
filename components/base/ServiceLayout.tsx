@@ -18,7 +18,9 @@ const ServiceLayout = () => {
               >
                 <service.icon className="w-8 h-8 text-brand" />
                 <h3 className="text-xl font-extrabold ">{service.name}</h3>
-                <p className="text-sm font-light ">{service.desc}</p>
+                <p className="text-sm font-light whitespace-pre-wrap">
+                  {service.desc}
+                </p>
               </div>
             ))}
           </div>

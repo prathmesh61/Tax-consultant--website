@@ -1,4 +1,5 @@
 import ExperthLayout from "@/components/base/ExperthLayout";
+import Footer from "@/components/base/Footer";
 import FormLayout from "@/components/base/FormLayout";
 import Header from "@/components/base/Header";
 import Hero from "@/components/base/Hero";
@@ -15,7 +16,7 @@ export default function Home() {
           src={mainBG}
           className="object-cover object-center w-full h-full "
         />
-        <div className="absolute top-0 bottom-0 right-0 w-[53%] bg-black opacity-50 blur-xl" />
+        <div className="absolute top-0 bottom-0 right-0 w-[55%] bg-black opacity-50 blur-2xl" />
         <div className="absolute top-0 w-full z-10">
           <Header />
           <Hero />
@@ -23,6 +24,7 @@ export default function Home() {
       </div>
       <FormLayout />
       <ServiceLayout />
+      <Footer />
     </main>
   );
 }
