@@ -9,8 +9,10 @@ const FormLayout: React.FC = () => {
   const list = [
     "Learn from customer feedback",
     "experience Knowledge",
-    "24/7 customer support",
+    "customer support",
+    "Providing Guidance",
     "Customer satisfaction",
+    "Maximizing tax savings",
   ];
 
   const sendEmail = (e: any) => {
@@ -23,6 +25,7 @@ const FormLayout: React.FC = () => {
           position: "top-center",
           icon: <CheckCheck size={15} />,
         });
+        form.current = "";
       },
       (error) => {
         console.log(error.text);
@@ -38,13 +41,14 @@ const FormLayout: React.FC = () => {
       <div className="flex flex-wrap-reverse gap-20 lg:gap-0 relative">
         <div className=" w-full lg:w-2/3 flex justify-center flex-col gap-y-5 ">
           <h2 className="text-black  font-extrabold lg:text-5xl text-2xl ">
-            We Will Provide Best Tax Service
-            <br /> For Your Business.
+            Tips for Maximizing the Value
+            <br /> Obtained from a Tax Consultant
+            <br /> Relationship
           </h2>
           <hr className="w-24 h-2 bg-brand " />
           <p className="text-black font-medium text-sm lg:text-lg max-w-[458px]">
-            We will provide best tax consulting & legal advisory services
-            related to property at Best Price.
+            Leveraging the Expertise of Tax Consultants and Property Legal
+            Advisors
           </p>
           <ul className="grid grid-cols-2  lg:max-w-[60%] w-full gap-2">
             {list.map((item: string) => (

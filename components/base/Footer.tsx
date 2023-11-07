@@ -1,4 +1,6 @@
+import { mapLink } from "@/utils/NavLinks";
 import { CopyrightIcon, MapPin, MessagesSquare, Phone } from "lucide-react";
+import Link from "next/link";
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -8,10 +10,14 @@ const Footer: React.FC = () => {
         <div className="flex flex-wrap items-center gap-3 ">
           <div className="flex items-start gap-x-1">
             <MapPin size={15} fill="orange" />
-            <span className="text-xs whitespace-pre-wrap  text-black">
+            <Link
+              href={mapLink}
+              target="_blank"
+              className="text-xs whitespace-pre-wrap  text-black hover:underline"
+            >
               Shop No 107, 1st floor, Anantam Heights, chatrapati Shivaji
               Maharaj Chowk, Bhiwandi - 421302
-            </span>
+            </Link>
           </div>
           <div className="flex items-center gap-x-1">
             <Phone size={15} fill="orange" />
@@ -21,9 +27,13 @@ const Footer: React.FC = () => {
           </div>
           <div className="flex items-center gap-x-1">
             <MessagesSquare size={15} fill="orange" />
-            <span className="text-xs whitespace-nowrap  text-black">
-              Message me on whatsapp
-            </span>
+            <Link
+              href={"https://wa.me/c/917887700770"}
+              target="_blank"
+              className="text-xs whitespace-nowrap  text-black hover:underline"
+            >
+              Message us on whatsapp
+            </Link>
           </div>
         </div>
         <div className="flex items-center gap-x-1">

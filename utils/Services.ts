@@ -1,11 +1,21 @@
 import { Tservices } from "@/lib/types";
 import {
+  BackpackIcon,
+  Badge,
   BarChart2,
+  BookMarked,
+  CableCar,
   Calculator,
+  CombineIcon,
+  Component,
+  Factory,
   FileCode2,
   FileText,
+  GalleryHorizontal,
   LockKeyhole,
+  RabbitIcon,
   Send,
+  Table,
 } from "lucide-react";
 export const services: Tservices[] = [
   {
@@ -41,51 +51,51 @@ export const services: Tservices[] = [
   {
     name: "MEME Udyam Registration",
     desc: "MSME business Registration is also known as UDYOG AADHAR which is generally use for small and medium scale enterprise or new business startup.",
-    icon: FileCode2,
+    icon: GalleryHorizontal,
   },
   {
     name: "BIS Certifications",
     desc: "Bureau of Indian Standards (BIS) Certifications Registrations",
-    icon: FileCode2,
+    icon: RabbitIcon,
   },
   {
     name: "ISO Certifications",
     desc: "ISO Certifications - With audit or Without audit",
-    icon: FileCode2,
+    icon: Factory,
   },
   {
     name: "Trade Mark",
     desc: "Trade Mark (Intellectual Property Right) Registration",
-    icon: FileCode2,
+    icon: CableCar,
   },
   {
     name: "Leave & Licence",
     desc: "Leave & Licence, Rent Agreement, Lease Deed",
-    icon: FileCode2,
+    icon: BackpackIcon,
   },
   {
     name: "Professional Tax",
     desc: "PTEC , PTRC Registration, Tax Payment, Returns filling",
-    icon: FileCode2,
+    icon: Component,
   },
   {
     name: "Firm Registration",
     desc: "Registration of Partnership Firm",
-    icon: FileCode2,
+    icon: CombineIcon,
   },
   {
     name: "Company Registration",
     desc: "ROC Filling, Company Registration, LLP Registration",
-    icon: FileCode2,
+    icon: Badge,
   },
   {
     name: "Income Tax",
     desc: "Preparation of Tax Return & Tax Planning",
-    icon: FileCode2,
+    icon: Table,
   },
   {
     name: "Property Registration",
     desc: "Sale or Purchase of Property, Conveyance Deep, Agreement For Sale, Registered Mortgage",
-    icon: FileCode2,
+    icon: BookMarked,
   },
 ];

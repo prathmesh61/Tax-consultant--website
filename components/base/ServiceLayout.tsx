@@ -10,10 +10,10 @@ const ServiceLayout = () => {
             What We Provide
           </h2>
           <hr className="w-36 h-2 bg-brand" />
-          <div className="flex flex-wrap items-center justify-center gap-5 mt-8">
+          <div className="flex flex-wrap items-center justify-center gap-5 mt-4 mb-4">
             {services.map((service) => (
               <div
-                className="flex flex-col gap-y-2 max-w-[300px] min-w-[300px] h-[200px] p-4 shadow-xl bg-white  transition-colors duration-400 
+                className="flex flex-col gap-y-2 max-w-[300px] min-w-[300px] h-[200px] p-4 shadow-xl bg-white  transition-colors duration-400 rounded-md
               "
               >
                 <service.icon className="w-8 h-8 text-brand" />
