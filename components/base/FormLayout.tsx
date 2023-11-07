@@ -1,9 +1,9 @@
 "use client";
-import { Check, Send } from "lucide-react";
+import { Check, CheckCheck, Send } from "lucide-react";
 import emailjs from "@emailjs/browser";
-import { FormEventHandler } from "react";
 import React, { useRef } from "react";
 import { PUBLIC_KEY, SERVICE_ID, TEMPLATE_ID } from "@/lib/constants";
+import toast from "react-hot-toast";
 const FormLayout: React.FC = () => {
   const form = useRef<any>();
   const list = [
@@ -12,20 +12,24 @@ const FormLayout: React.FC = () => {
     "24/7 customer support",
     "Customer satisfaction",
   ];
-  console.log(form.current);
 
   const sendEmail = (e: any) => {
     e.preventDefault();
 
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       (result) => {
-        console.log(result.text);
+        toast.success("Successfully.", {
+          duration: 1000,
+          position: "top-center",
+          icon: <CheckCheck size={15} />,
+        });
       },
       (error) => {
         console.log(error.text);
       }
     );
   };
+
   return (
     <section
       id="formLayout"
