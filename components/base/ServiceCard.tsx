@@ -1,5 +1,4 @@
 import { services } from "@/utils/Services";
-import React from "react";
 
 const ServiceCard = () => {
   return (

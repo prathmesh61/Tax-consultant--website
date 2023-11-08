@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import girl from "@/public/girl.jpeg";
 import men from "@/public/men.jpeg";
 const ExperthLayout = () => {

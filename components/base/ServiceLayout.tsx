@@ -1,4 +1,3 @@
-import { services } from "@/utils/Services";
 import React from "react";
 import ServiceCard from "./ServiceCard";
 const ServiceLayout = () => {

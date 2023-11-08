@@ -1,16 +1,5 @@
 import { mapLink } from "@/utils/NavLinks";
-import {
-  Facebook,
-  Instagram,
-  Locate,
-  LocateIcon,
-  Mail,
-  MapPin,
-  MessagesSquare,
-  Phone,
-  Twitter,
-  Youtube,
-} from "lucide-react";
+import { MapPin, MessagesSquare, Phone } from "lucide-react";
 import Link from "next/link";
 const HeaderAction: React.FC = () => {
   return (

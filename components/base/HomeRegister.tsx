@@ -1,4 +1,3 @@
-import React from "react";
 import secondHeroBg from "@/public/HeroImage.jpg";
 import Image from "next/image";
 import { ArrowBigDownDash, ArrowBigRightDash, Check } from "lucide-react";

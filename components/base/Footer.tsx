@@ -1,7 +1,6 @@
 import { mapLink } from "@/utils/NavLinks";
 import { CopyrightIcon, MapPin, MessagesSquare, Phone } from "lucide-react";
 import Link from "next/link";
-import React from "react";
 
 const Footer: React.FC = () => {
   return (
