@@ -1,5 +1,6 @@
 import { services } from "@/utils/Services";
 import React from "react";
+import ServiceCard from "./ServiceCard";
 const ServiceLayout = () => {
   return (
     <section id="servicesLayout" className="mt-32 bg-[#184341] p-2">
@@ -11,18 +12,7 @@ const ServiceLayout = () => {
           </h2>
           <hr className="w-36 h-2 bg-brand" />
           <div className="flex flex-wrap items-center justify-center gap-5 mt-4 mb-4">
-            {services.map((service) => (
-              <div
-                className="flex flex-col gap-y-2 max-w-[300px] min-w-[300px] h-[200px] p-4 shadow-xl bg-white  transition-colors duration-400 rounded-md
-              "
-              >
-                <service.icon className="w-8 h-8 text-brand" />
-                <h3 className="text-xl font-extrabold ">{service.name}</h3>
-                <p className="text-sm font-light whitespace-pre-wrap">
-                  {service.desc}
-                </p>
-              </div>
-            ))}
+            <ServiceCard />
           </div>
         </div>
       </div>
