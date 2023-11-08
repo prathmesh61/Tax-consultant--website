@@ -1,10 +1,9 @@
-import ExperthLayout from "@/components/base/ExperthLayout";
 import Footer from "@/components/base/Footer";
 import FormLayout from "@/components/base/FormLayout";
 import Header from "@/components/base/Header";
 import Hero from "@/components/base/Hero";
+import HomeRegister from "@/components/base/HomeRegister";
 import ServiceLayout from "@/components/base/ServiceLayout";
-import heroBg from "@/public/hero.jpg";
 import mainBG from "@/public/Herobg.png";
 import Image from "next/image";
 export default function Home() {
@@ -23,6 +22,7 @@ export default function Home() {
         </div>
       </div>
       <FormLayout />
+      <HomeRegister />
       <ServiceLayout />
       <Footer />
     </main>
