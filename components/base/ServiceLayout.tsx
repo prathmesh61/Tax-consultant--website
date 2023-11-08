@@ -13,6 +13,7 @@ const ServiceLayout = () => {
           <div className="flex flex-wrap items-center justify-center gap-5 mt-4 mb-4">
             {services.map((service) => (
               <div
+                key={service.name}
                 className="flex flex-col gap-y-2 max-w-[300px] min-w-[300px] h-[200px] p-4 shadow-xl bg-white  transition-colors duration-400 rounded-md
               "
               >
