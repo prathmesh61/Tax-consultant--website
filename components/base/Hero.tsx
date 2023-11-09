@@ -3,7 +3,7 @@ import { ArrowBigRightDash } from "lucide-react";
 const Hero: React.FC = () => {
   return (
     <section className="max-w-[1440px]  mx-auto ">
-      <div className="flex flex-col gap-y-8 absolute right-14 lg:right-60 top-80 px-6 ">
+      <div className="flex flex-col gap-y-8 absolute right-16 lg:right-60 top-80 px-6 ">
         <h3 className="text-white font-bold lg:text-3xl text-lg">
           WE'RE TAX CONSULTANT
         </h3>
