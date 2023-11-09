@@ -4,7 +4,6 @@ import Header from "@/components/base/Header";
 import Hero from "@/components/base/Hero";
 import HomeRegister from "@/components/base/HomeRegister";
 import ServiceLayout from "@/components/base/ServiceLayout";
-import mainBG from "@/public/Herobg.png";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -12,7 +11,7 @@ export default function Home() {
       <div className="h-screen w-screen relative ">
         <Image
           alt="hero"
-          src={mainBG}
+          src="https://res.cloudinary.com/dpvjdarqx/image/upload/v1699507832/samples/people/cvtw4liftundjprxfn2k.jpg"
           className="object-cover object-center w-full h-full "
         />
         <div className="absolute top-0 bottom-0 right-0 w-[60%] bg-black opacity-50 blur-2xl" />

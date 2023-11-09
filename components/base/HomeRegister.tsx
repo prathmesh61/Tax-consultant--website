@@ -1,5 +1,4 @@
 import React from "react";
-import secondHeroBg from "@/public/HeroImage.jpg";
 import Image from "next/image";
 import { ArrowBigDownDash, ArrowBigRightDash, Check } from "lucide-react";
 
@@ -16,7 +15,7 @@ const HomeRegister = () => {
     <div className="h-screen w-screen relative mt-20">
       <Image
         alt="secondHeroBg"
-        src={secondHeroBg}
+        src="https://res.cloudinary.com/dpvjdarqx/image/upload/v1699507829/samples/people/cko7sp1avcumd2vrp3fg.jpg"
         className="object-cover object-center w-full h-full "
       />
       <div className="absolute top-0 bottom-0 left-0 w-[55%] bg-black opacity-50 blur-2xl" />
