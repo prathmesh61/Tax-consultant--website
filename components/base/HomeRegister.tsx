@@ -19,7 +19,7 @@ const HomeRegister = () => {
         src={secondHeroBg}
         className="object-cover object-center w-full h-full "
       />
-      <div className="absolute top-0 bottom-0 left-0 w-[65%] bg-black opacity-60 blur-2xl" />
+      <div className="absolute top-0 bottom-0 left-0 w-[55%] bg-black opacity-50 blur-2xl" />
       <div className="flex flex-col gap-y-8 absolute left-5 lg:left-60 top-80 max-w-[1440px]  mx-auto ">
         <div className="w-full">
           <h2 className="text-white whitespace-nowrap  font-extrabold lg:text-5xl text-[16px]  before:border-l-8  before:mr-3 before:border-brand">
