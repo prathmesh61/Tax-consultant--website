@@ -13,14 +13,17 @@ const HomeRegister = () => {
   ];
   return (
     <div className="h-screen w-screen relative mt-20">
-      <Image
-        alt="secondHeroBg"
-        src="https://res.cloudinary.com/dpvjdarqx/image/upload/v1699507829/samples/people/cko7sp1avcumd2vrp3fg.jpg"
-        className="object-cover object-center w-full h-full "
-        width={100}
-        height={100}
-      />
-      <div className="absolute top-0 bottom-0 left-0 w-[65%] bg-black opacity-60 blur-2xl" />
+      <div className="relative w-full h-full">
+        <Image
+          alt="secondHeroBg"
+          src="https://res.cloudinary.com/dpvjdarqx/image/upload/v1699507829/samples/people/cko7sp1avcumd2vrp3fg.jpg"
+          className="object-cover object-center w-full h-full "
+          width={1000}
+          height={1000}
+        />
+      </div>
+
+      <div className="absolute top-0 bottom-0 left-0 w-[60%] bg-black opacity-50 blur-2xl" />
       <div className="flex flex-col gap-y-8 absolute left-5 lg:left-60 top-80 max-w-[1440px]  mx-auto ">
         <div className="w-full">
           <h2 className="text-white whitespace-nowrap  font-extrabold lg:text-5xl text-[16px]  before:border-l-8  before:mr-3 before:border-brand">
